@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIV/AIDS Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="maina">
+
+    <header id="toppage">
+        <div>
+            <img class="logo" src="download (1).jpeg" alt="the aids ribon logo">
+        </div>
+        <div>
+            <h1>HIV/AIDS SURVEY</h1>
+        </div>
+        <div>
+            <img class="logo" src="download (1).jpeg" alt="the aids ribon logo">
+        </div>
+    </header>
+
+    <main class="body">
+        <div class="content">
+            <!-- First Form -->
+            <form class="card1" id="form1">
+                <h2>What is HIV/AIDS?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="one" value="virus that weakens immune system">
+                        <label for="one">It is a virus that weakens your immune system, making your body susceptible to diseases</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="two" value="makes you thin leading to death">
+                        <label for="two">It is a disease that makes you thin leading to death</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="three" value="AIDS weakens immune system leading to death">
+                        <label for="three">AIDS is a virus that weakens the body's immune system leading to death</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="four" value="AIDS transmitted only through sex">
+                        <label for="four">AIDS is a disease that is only transmitted through sex and is very deadly</label>
+                    </li>
+                </ul>
+
+                <h2>How did you learn about HIV/AIDS?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="how" id="source1" value="school">
+                        <label for="source1">Through school</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="how" id="source2" value="social media">
+                        <label for="source2">From social media</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="how" id="source3" value="community education programs">
+                        <label for="source3">Through community education programs</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="how" id="source4" value="common knowledge">
+                        <label for="source4">I just happened to know/common knowledge</label>
+                    </li>
+                </ul>
+
+                <label for="spouses"><strong>How many spouses/partners do you have?</strong></label>
+                <br>
+                <input type="number" id="spouses" step="1">
+                
+                <br>
+
+                <!-- Submission Button for Form 1 -->
+                <button class="button" type="button" onclick="sendToWhatsApp('form1')">Submit Form 1</button>
+            </form>
+
+            <!-- Second Form -->
+            <form class="card2" id="form2">
+                <h2>Do you engage in unprotected sex?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="unprotected" id="yes" value="yes">
+                        <label for="yes">YES</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="unprotected" id="no" value="no">
+                        <label for="no">NO</label>
+                    </li>
+                </ul>
+
+                <h2>If yes, what might be the reason?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="reason" id="reason1" value="prefer it that way">
+                        <label for="reason1">Prefer it that way</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="reason" id="reason2" value="unavailability of condoms">
+                        <label for="reason2">Unavailability of condoms</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="reason" id="reason3" value="trust my partner">
+                        <label for="reason3">I trust my partner(s)</label>
+                    </li>
+                    <li>
+                        <label for="reason4">Any other specific reason</label>
+                        <textarea name="reason" id="reason4" cols="30" rows="2"></textarea>
+                    </li>
+                </ul>
+
+                <label for="suggest"><strong>Any suggestions you might have to eliminate HIV/AIDS?</strong></label>
+                <br>
+                <textarea name="suggestions" id="suggest" rows="10" cols="30"></textarea>
+                <br>
+
+                <!-- Submission Button for Form 2 -->
+                <button class="button" type="button" onclick="sendToWhatsApp('form2')">Submit Form 2</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bottom">
+        <div class="icons">
+            <h3>Contact Me</h3>
+            <ul id="contacts" class="links">
+               <a href="https://www.instagram.com/shazzluk/" target="_blank"><li><i class="fab fa-instagram-square fa-2x"></i></li></a>
+                <a href="https://x.com/Ha_zzy18"><li><i class="fab fa-twitter-square fa-2x"></i></li></a>
+                <a href="https://www.facebook.com/hazzy17/about/" target="_blank"><li><i class="fab fa-facebook-f fa-2x"></i></li></a>
+                <a target="_blank" href="https://wa.me/254757611486/?text=Hello%20I%20how%20may%20I%20be%20of%20assistance"><li><i class="fab fa-whatsapp-square fa-2x"></i></li></a>
+            </ul>
+        </div>
+        <div class="explainer">
+            <p>HIV/AIDS awareness is crucial for creating a healthier, stigma-free world. By educating communities, we can prevent new infections, support those affected, and encourage regular testing. Empowering people with knowledge fosters compassion and resilience, helping to reduce transmission rates and ensure everyone has access to treatment and care</p>
+            <P>An HIV survey helps assess awareness, identify high-risk behaviors, and evaluate the impact of prevention programs. It provides vital data for improving healthcare strategies, reducing infection rates, and supporting those affected by HIV/AIDS.</P>
+        </div>
+    </footer>
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
